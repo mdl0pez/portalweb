@@ -1,0 +1,233 @@
+body {
+    /*Reglas del body*/
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.CV {
+    /*Contenedor principal de la hoja de vida
+      Define el layout de dos columnas*/
+    display: flex;
+    width: 850px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.426);
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.colum_izq {
+    /*Columna izquierda (aside)*/
+    font-size: 18px;
+    background-color: #d5d8da;
+    color: #1d2332;
+    width: 35%;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.foto_perfil img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    /*Redondea los bordes de la imagen*/
+}
+
+.colum_izq h2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    display: block;
+    gap: initial;
+    background-color: #1e3f66;
+    padding: 2px 25px 2px 15px;
+    width: 140px;
+    /*Ancho fijo para todos los h2 de la columna izquierda*/
+    display: inline-block;
+    margin-bottom: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.colum_izq ul {
+    list-style: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.colum_izq ul li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.colum_izq ul li i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #121314;
+}
+
+.colum_izq .contacto a {
+    text-decoration: none;
+    color: #121314;
+}
+
+.colum_izq .referencias ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.colum_izq .referencias .referencia_nombre {
+    font-weight: bold;
+    margin: 0px;
+    flex-basis: 100%;
+}
+
+.colum_izq .referencias .referencia_cargo,
+.colum_izq .referencias .referencia_telefono {
+    margin: 0px;
+}
+
+.colum_izq .referencias ul li i {
+    font-size: 25px;
+    margin-right: 15px;
+    align-self: flex-start;
+}
+
+.colum_der {
+    padding: 40px;
+    padding-left: 25px;
+    width: 65%;
+}
+
+.colum_der header h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 0;
+    color: #1e3f66;
+}
+
+.colum_der header h3 {
+    text-align: center;
+    margin-top: 5px;
+    color: #414e5d;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid #161a1e;
+    padding-bottom: 15px;
+}
+
+.colum_der h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e3f66;
+    padding: 2px 25px 2px 15px;
+    width: 130px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.colum_der h3 {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+.colum_der p,
+.colum_der ul li {
+    text-align: justify;
+    color: #121314;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+.colum_der .experiencia h3,
+.colum_der .educacion h3,
+.colum_der .proyectos h3 {
+    color: #1b1d1f;
+    font-size: 16px;
+}
+
+.colum_der .experiencia h4 {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #5d6d7e;
+}
+
+.colum_der .item_edu h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.colum_der .habilidades ul {
+    margin-top: 0px;
+}
+
+/*-----Responsividad-----*/
+@media (max-width: 768px) {
+
+    /*Para dispositivos con ancho máximo de 768px*/
+    .CV {
+        flex-direction: column;
+        /*Convierte el diseño de dos columnas en una sola*/
+        width: 100%;
+        margin: 0;
+        /*Elimina márgenes para ocupar todo el ancho*/
+        box-shadow: none;
+    }
+
+    .colum_izq {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .colum_der {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .colum_der header h1 {
+        font-size: 2.5em;
+    }
+
+    .colum_der header h3 {
+        font-size: 1em;
+    }
+
+    .colum_der h2 {
+        font-size: 1.1em;
+        width: auto;
+        /*Para que el ancho del título se ajuste al contenido*/
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
+
+    .colum_der p,
+    .colum_der ul li {
+        font-size: 0.9em;
+    }
+}

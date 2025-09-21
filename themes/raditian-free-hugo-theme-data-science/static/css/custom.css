@@ -1,0 +1,24 @@
+/* You can customize theme styles here */
+
+/* ===========================
+   Fotos: unificar tamaño About / Contact
+   ===========================*/
+
+/* Regla recomendada: responsiva, se limita a 393px y se alinea a la izquierda */
+.section--contact .contact .img-responsive.image-left-overflow,
+.section--about  .contact .img-responsive.image-left-overflow {
+  width: 100%;            /* ocupa el ancho disponible en pantallas pequeñas */
+  max-width: 393px;       /* no crecerá más de 393px */
+  height: auto;           /* mantiene la proporción */
+  object-fit: cover;      /* recorta si hace falta sin distorsionar */
+  margin: 18px 0;         /* separa verticalmente, sin centrar */
+}
+
+/* Selector más simple que también funciona si sólo quieres afectar Contact */
+.contact .img-responsive.image-left-overflow {
+  width: 100%;
+  max-width: 393px;
+  height: auto;
+  object-fit: cover;
+  margin: 18px 0;         /* separación arriba/abajo, alineada a la izquierda */
+}

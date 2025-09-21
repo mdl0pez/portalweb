@@ -1,0 +1,184 @@
+head:
+  title: "Portafolio de Mateo López"
+
+# showcase
+showcase:
+  enable: true
+  title: "Hola, soy Mateo López."
+  subtitle: "Estudiante de Ing. de Sistemas"
+  description: "Soy estudiante de Ingeniería de Sistemas en 
+  la Universidad del Magdalena, actualmente curso el sexto semestre 
+  de la carrera. Me destaco por mi interés en la programación, el análisis 
+  de datos y el desarrollo web. Mi enfoque está en adquirir experiencia 
+  práctica mientras fortalezco mis bases teóricas, buscando siempre crecer 
+  profesional y académicamente."
+  image:
+    x: "img/showcase/gif.gif"
+    _2x: "img/showcase/gif.gif"
+  imageMobile:
+    x: "img/showcase/gif.gif"
+    _2x: "img/showcase/gif.gif"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contáctame"
+    URL: "mailto:mdolopez@unimagdalena.edu.co"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/mateo-lopez-ospino-a606a5314"
+
+    - icon: "github"
+      URL: "https://github.com/mdl0pez"
+
+    - icon: "fab fa-whatsapp"
+      icon_pack: fab
+      URL: "https://wa.me/573216484415"
+
+
+    - icon: "instagram"
+      URL: "https://www.instagram.com/md_l0pez"
+
+
+# about
+about:
+  enable: true
+  title: "¿Quién soy?"
+  content: 
+    <p class="lead">
+    Me considero una persona en constante aprendizaje, apasionado por el estudio, el arte, 
+    la música y el entrenamiento. Siempre busco nuevas oportunidades para desarrollar mis 
+    habilidades y mantenerme actualizado.
+    </p>
+    <p class="lead">
+     Actualmente me centro principalmente en el <strong>desarrollo web</strong>, respaldado por 
+     bases sólidas de programación. También he trabajado en pequeños proyectos que me han 
+     permitido afianzar mis conocimientos y explorar distintas herramientas. Además, he tenido 
+     la oportunidad de desempeñarme como docente, orientando clases y actividades académicas en 
+     diferentes áreas.
+    </p>
+  button:
+    icon: "icon-smile-fill"
+    btnText: "Más sobre mí"
+    URL: "https://www.linkedin.com/in/mateo-lopez-ospino-a606a5314"
+  image:
+    x: "img/who-am-i/foto_perfil.jpg"
+    _2x: "img/who-am-i/foto_perfil.jpg"
+
+# experience
+experience:
+  enable: true
+  title: "Experiencia"
+  description: " Experiencia en el campo educativo, el diseño de bases de datos y el 
+  desarrollo de software. Me especializo en la creación de soluciones tecnológicas a 
+  través de herramientas como SQL Server y JavaSwing, complementando con mi labor 
+  docente de apoyo en entornos académicos.  "
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/mateo-lopez-ospino-a606a5314"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Accede a mí currículum"
+    URL: "/cv/index.html"
+
+  items:
+    - title: "Docente de Apoyo"
+      company: "IED Técnico Industrial"
+      duration: "Feb 2025 - Actualidad"
+
+    - title: "Diseño, modelado y desarrollo de bases de datos"
+      company: "Universidad del Magdalena"
+      duration: "Jun 2024 - Feb 2025"
+
+    - title: "Programación y desarrollo de aplicaciones"
+      company: "Universidad del Magdalena"
+      duration: "Nov 2023 - Jun 2024"
+      content: efef
+
+# education
+education:
+  enable: true
+  title: "Educación"
+  items:
+    - university: "Universidad del Magdalena"
+      year: "2023 - Actualidad"
+      degree: "Ingeniería de Sistemas"
+
+    - university: "Servicio Nacional de Aprendizaje (SENA)"
+      year: "2021 - 2022"
+      degree: "Técnico en Sistemas"
+      
+    - university: "IED Liceo Samario"
+      year: "2020 - 2022"
+      degree: "Media Académica"
+      
+    - university: "IED Liceo Samario"
+      year: "2012 - 2019"
+      degree: "Básica Primaria y Básica Secundaria"
+
+
+
+# Client & Work
+client_and_work:
+  title: "Proyectos"
+  enable: true
+  
+  works:
+    - title: "Videosferas: Prototipo de aplicación/sitio web"
+      description: "Videosferas es una página web original de la Universidad del Magdalena, 
+      creada con el objetivo de recopilar y centralizar todo el material audiovisual producido 
+      por la comunidad universitaria. Mi rol en este proyecto fue el diseño de la interfaz, 
+      elaborando un prototipo que permite visualizar cómo se vería el producto final en funcionamiento, 
+      facilitando el acceso y exploración del contenido multimedia en línea. "
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Abrir aplicación"
+        URL: "https://www.figma.com/proto/IdIIeSBCkND2m5MD2kcA7X?node-id=0-1&t=JzW8ZqxYzH6QY0kP-6"
+      image:
+        x: "img/works/app_figma.jpg"
+        _2x: "img/works/app_figma.jpg"
+      is_even: true
+
+    - title: "Evaluador de circuitos lógicos"
+      description: "Programa desarrollado en JavaSwing, aplicando los fundamentos y conceptos 
+      de la programación orientada a objetos. El sistema permite crear un circuito lógico desde 
+      cero o a partir de una expresión booleana, evaluar su comportamiento y generar automáticamente 
+      la tabla de verdad correspondiente. Además, incluye funcionalidades para guardar y cargar archivos, 
+      adaptándose a las necesidades del usuario." 
+      image:
+        x: "img/works/circuitos_java.jpg"
+        _2x: "img/works/circuitos_java.jpg"
+      is_even: false
+
+    
+
+# testimonial
+testimonial:
+  enable: false
+  title: "Testimonials"
+
+
+# contact
+contact:
+  enable: true
+  title: "Contacto"
+    
+  image:
+    x: "img/who-am-i/foto_perfil.jpg"
+    _2x: "img/who-am-i/user-picture-2.jpg"
+    
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Enviar mensaje"
+    btnAction: 'mailto:mdolopez@unimagdalena.edu.co'
+    
+  phone:
+    title: "Número Telefónico"
+    number: "+57 321 648 4415"
+  email:
+    title: "Email"
+    email: '<a href="mailto:mdolopez@unimagdalena.edu.co">mdolopez@unimagdalena.edu.co</a>'
+  address:
+    title: "Domicilio"
+    address: "Santa Marta, Colombia"
